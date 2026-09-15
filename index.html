@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonrisa Uruguaya | Clínica Dental</title>
+    <link rel="icon" href="icono.png" type="image/png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5fbfa;
+            color: #334e52;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #7bc8c4, #9edbd7);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        nav {
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+            border-bottom: 1px solid #dceceb;
+        }
+
+        nav a {
+            color: #397d7a;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #245e5b;
+        }
+
+        .bienvenida {
+            text-align: center;
+            padding: 70px 20px;
+            background-color: #eaf7f6;
+        }
+
+        .bienvenida h2 {
+            font-size: 2rem;
+            color: #286c69;
+            margin-bottom: 15px;
+        }
+
+        .bienvenida p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.1rem;
+            color: #526b6d;
+        }
+
+        .seccion {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .seccion h2 {
+            text-align: center;
+            color: #286c69;
+            margin-bottom: 35px;
+            font-size: 1.9rem;
+        }
+
+        .servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .servicio {
+            background-color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(45, 100, 98, 0.08);
+            border: 1px solid #e0eeee;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .servicio:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(45, 100, 98, 0.14);
+        }
+
+        .icono {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .servicio h3 {
+            color: #397d7a;
+            margin-bottom: 10px;
+        }
+
+        .horarios {
+            background-color: #ffffff;
+            text-align: center;
+            border-top: 1px solid #e0eeee;
+            border-bottom: 1px solid #e0eeee;
+        }
+
+        .horarios p {
+            font-size: 1.1rem;
+            margin: 8px 0;
+        }
+
+        .contacto {
+            text-align: center;
+            padding-bottom: 70px;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #68b8b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+
+        .boton:hover {
+            background-color: #4c9d99;
+        }
+
+        footer {
+            background-color: #315b5a;
+            color: #eaf7f6;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer h3 {
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.95rem;
+        }
+
+        .copyright {
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: #c9dddd;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .bienvenida {
+                padding: 50px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sonrisa Uruguaya</h1>
+        <p>Clínica Dental en Montevideo</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio" class="bienvenida">
+        <h2>Bienvenidos a Sonrisa Uruguaya</h2>
+        <p>
+            Cuidamos tu sonrisa con atención profesional, cercana y de calidad.
+            Nuestro objetivo es ayudarte a mantener una buena salud bucal
+            y una sonrisa saludable.
+        </p>
+    </section>
+
+    <section id="servicios" class="seccion">
+        <h2>Nuestros Servicios</h2>
+
+        <div class="servicios">
+
+            <div class="servicio">
+                <div class="icono">🦷</div>
+                <h3>Limpieza Dental</h3>
+                <p>
+                    Higiene dental profesional para mantener tus dientes
+                    limpios y saludables.
+                </p>
+            </div>
+
+            <div class="servicio">
+                <div class="icono">✨</div>
+                <h3>Blanqueamiento</h3>
+                <p>
+                    Tratamientos para mejorar el aspecto y luminosidad
+                    de tu sonrisa.
+                </p>
+            </div>
+
+            <div class="servicio">
+                <div class="icono">😁</div>
+                <h3>Ortodoncia</h3>
+                <p>
+                    Opciones de tratamiento para lograr una sonrisa
+                    más alineada y saludable.
+                </p>
+            </div>
+
+            <div class="servicio">
+                <div class="icono">🚨</div>
+                <h3>Atención de Urgencias</h3>
+                <p>
+                    Atención odontológica para situaciones que requieren
+                    asistencia rápida.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="horarios" class="seccion horarios">
+        <h2>Horario de Atención</h2>
+
+        <p><strong>Lunes a Viernes:</strong> 09:00 a 18:00</p>
+        <p><strong>Sábados:</strong> 09:00 a 13:00</p>
+    </section>
+
+    <section id="contacto" class="seccion contacto">
+        <h2>Estamos para ayudarte</h2>
+        <p>
+            Comunicate con nosotros para consultar nuestros servicios
+            y coordinar tu atención.
+        </p>
+
+        <a href="#" class="boton">Solicitar consulta</a>
+    </section>
+
+    <footer>
+        <h3>Sonrisa Uruguaya</h3>
+        <p>Clínica Dental · Montevideo, Uruguay</p>
+        <p>Tu sonrisa, nuestro compromiso.</p>
+
+        <div class="copyright">
+            © 2026 Sonrisa Uruguaya. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- =========================================================
+         PEGAR ACA EL SCRIPT DEL CHATBOT
+         ========================================================= -->
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="ztE6XBOngkBl0i73vEsGI";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+</body>
+</html>
