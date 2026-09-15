@@ -273,6 +273,16 @@
             y coordinar tu atención.
         </p>
 
+        <a id="whatsapp" class="boton" href="#" target="_blank">Enviar por WhatsApp</a>
+
+        <script>
+        const phone = "59898654123";
+        const message = "Hola, ¿están disponibles?";
+
+        document.getElementById("whatsapp").href =
+            `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+        </script>
+
         <a href="https://chatbase-test-gamma.vercel.app/help"
         class="boton"
         target="_blank"
@@ -283,7 +293,7 @@
 
     <footer>
         <h3>Sonrisa Uruguaya</h3>
-        <p>Clínica Dental · Montevideo, Uruguay</p>
+        <p>Clínica Dental · Aguada, Montevideo, Uruguay</p>
         <p>Tu sonrisa, nuestro compromiso.</p>
 
         <div class="copyright">
